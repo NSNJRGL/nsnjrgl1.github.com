@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 11pt;
+  font-family: "Yaldevi", sans-serif;
+  color: #404040;
+  background-image: url("./images/silverware.jpg");
+}
+
+.container {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.inner-container {
+  background-color: #f0f0f0;
+  color: #a4a400;
+  text-decoration: underline;
+}
+
+.inner-container h1 {
+  font-size: 22pt;
+  font-weight: bold;
+}
+
+.inner-container h2 {
+  font-size: 18pt;
+  font-weight: normal;
+}
+
+.center {
+  text-align: center;
+}
+
+a {
+  color: #a4a400;
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.yellow {
+  background-color: #e0e050;
+  margin-left: 14px;
+  margin-right: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.yellow p {
+  font-style: italic;
+}
+
+.copyright {
+  /* text-align: right; */
+}
