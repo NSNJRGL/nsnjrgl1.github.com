@@ -1,0 +1,29 @@
+header {
+  background-color: lightblue;
+}
+
+nav,
+footer {
+  background-color: darkslategrey;
+}
+
+nav ul li a.nav-link {
+  color: white;
+  border-right: 1px solid #333333;
+}
+
+.col1 {
+  background-color: #9d9d9d;
+}
+.col2 {
+  background-color: #bbbbbb;
+}
+.col3 {
+  background-color: #d6d6d6;
+}
+
+.col1,
+.col2,
+.col3 {
+  height: 180px;
+}
