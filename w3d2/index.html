@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="form-group p-3 position-absolute">
+      <label for="width">Width</label>
+      <input
+        type="number"
+        id="width"
+        class="form-control mb-2"
+        min="0"
+        step="1"
+        value="50"
+      />
+      <label for="amount">Growth amount</label>
+      <input
+        type="number"
+        id="amount"
+        class="form-control mb-2"
+        min="0"
+        step="1"
+        value="10"
+      />
+      <label for="rate">Grow rate</label>
+      <input
+        type="number"
+        id="rate"
+        class="form-control mb-2"
+        min="0"
+        step="1"
+        value="1000"
+      />
+      <label for="circle">Number circles</label>
+      <input
+        type="number"
+        id="circle"
+        class="form-control mb-2"
+        min="0"
+        step="1"
+        value="1"
+      />
+      <button type="button" class="btn btn-primary start">Start</button>
+    </div>
+    <div class="bubble-container"></div>
+  </body>
+</html>
