@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- saved from url=(0147)https://sakai.cs.miu.edu/access/content/attachment/939cc360-0b01-4348-9703-9cae2435e243/Assignments/5393f85f-afd0-4908-ae7c-ddd1a7705236/index.html -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Bank Accounts</title>
+
+    <link rel="stylesheet" href="./index_files/mocha.css" />
+    <script src="./index_files/mocha.js"></script>
+    <script src="./index_files/chai.js"></script>
+    <script>
+      // initialize mocha
+      mocha.setup("bdd");
+      // chai has a lot of stuff, let's make assert global
+      let assert = chai.assert;
+    </script>
+
+    <script src="account.js"></script>
+    <script src="savingsaccount.js"></script>
+    <script src="checkingaccount.js"></script>
+    <script src="bank.js"></script>
+    <script src="test.js"></script>
+  </head>
+
+  <body data-new-gr-c-s-check-loaded="14.1032.0" data-gr-ext-installed="">
+    <div id="mocha"></div>
+    <script>
+      mocha.run();
+    </script>
+  </body>
+</html>
