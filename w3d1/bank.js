@@ -1,27 +1,28 @@
 class Bank {
+  static nextNumber = 1;
+
   constructor() {
     this.accounts = [];
-    this.nextNumber = 1;
   }
 
   addAccount() {
-    const account = new Account(this.nextNumber);
+    const account = new Account(Bank.nextNumber);
     this.accounts.push(account);
-    this.nextNumber += 1;
+    Bank.nextNumber += 1;
     return account.getNumber();
   }
 
   addSavingsAccount(interest) {
-    const savingAccount = new SavingsAccount(this.nextNumber, interest);
+    const savingAccount = new SavingsAccount(Bank.nextNumber, interest);
     this.accounts.push(savingAccount);
-    this.nextNumber += 1;
+    Bank.nextNumber += 1;
     return savingAccount.getNumber();
   }
 
   addCheckingAccount(overdraft) {
-    const checkingAccount = new CheckingAccount(this.nextNumber, overdraft);
+    const checkingAccount = new CheckingAccount(Bank.nextNumber, overdraft);
     this.accounts.push(checkingAccount);
-    this.nextNumber += 1;
+    Bank.nextNumber += 1;
     return checkingAccount.getNumber();
   }
 
