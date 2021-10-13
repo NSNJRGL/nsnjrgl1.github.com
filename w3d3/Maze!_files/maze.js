@@ -2,6 +2,7 @@ $(document).ready(function () {
   function offEvent() {
     $(".boundary").off();
     $("#end").off();
+    $("#maze").off();
   }
 
   function onLose() {
