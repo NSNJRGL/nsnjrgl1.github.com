@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title><%= product.name %></title>
+  </head>
+  <body>
+    <div>
+      <img src="<%= product.image %>" alt="img" />
+      <span> <%= product.name %> </span>
+      <span> USD<b> <%= product.price %> </b> </span>
+    </div>
+    <form action="/addToCart" method="POST">
+      <input type="text" name="name" value="<%= product.name %>" />
+      <input type="text" name="price" value="<%= product.price %>" />
+      <input type="submit" value="Add to cart" />
+    </form>
+  </body>
+</html>
