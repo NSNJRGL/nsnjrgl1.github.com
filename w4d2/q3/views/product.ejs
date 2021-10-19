@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title><%= product.name %></title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/jquery.js"></script>
+  </head>
+  <body>
+    <div>
+      <img src="<%= product.image %>" alt="img" />
+      <span> <%= product.name %> </span>
+      <span> USD<b> <%= product.price %> </b> </span>
+      <p id="success" style="display: none">Successfully added.</p>
+    </div>
+    <form id="addCart">
+      <input type="text" name="name" id="name" value="<%= product.name %>" />
+      <input type="text" name="price" id="price" value="<%= product.price %>" />
+      <button type="submit">Submit</button>
+    </form>
+    <span>Cart: <a href="/shoppingCart" id="cartCounter"><%= count %></a></span>
+  </body>
+</html>

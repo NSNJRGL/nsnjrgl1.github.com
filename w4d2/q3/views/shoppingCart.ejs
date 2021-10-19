@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+    <% if (!shoppingCart) { %>
+    <span> No items </span>
+    <% } %> <% for(key in shoppingCart) {%>
+    <div>
+      <span> <%= shoppingCart[key].name %> </span>
+      <span> Quantity<b> <%= shoppingCart[key].quantity %> </b> </span>
+      <span> USD<b> <%= shoppingCart[key].price %> </b> </span>
+    </div>
+    <% } %>
+  </body>
+</html>
